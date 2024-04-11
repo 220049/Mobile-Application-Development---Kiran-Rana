@@ -16,7 +16,7 @@ class Person {
     this.phoneNo,
   });
 
-  // COpy with :
+  // COpy with
 
   Person copyWith(
       {int? personId,
@@ -39,13 +39,32 @@ class Person {
 void main() {
   var p = Person(
       personId: 1,
-      fname: 'Kiran',
+      fname: 'asd',
       lname: 'Rana',
       address: 'KTM',
       age: 1,
-      phoneNo: '9877733774');
+      phoneNo: 'asd');
 
-  Person p2 = p.copyWith(personId: 2);
+  Person p2 = p.copyWith(personId: 1, fname: "Hari");
+  Person p3 = p.copyWith(personId: 2, fname: "Ram");
+  Person p4 = p.copyWith(personId: 3, fname: "Sita");
 
-  print(p2.lname);
+  // Create list of person
+
+  List<Person> lstPerson = [];
+  lstPerson.add(p);
+  lstPerson.add(p2);
+  lstPerson.add(p);
+  lstPerson.add(p4);
+
+  // display fname and address
+  for (int i = 0; i < lstPerson.length; i++) {
+    print(
+        'fname : ${lstPerson[i].fname} and address : ${lstPerson[i].address}');
+  }
+
+  // another way
+  for (var p in lstPerson) {
+    print('fname : ${p.fname} , address : ${p.address}');
+  }
 }
