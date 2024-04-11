@@ -43,7 +43,7 @@ void main() {
       lname: 'Rana',
       address: 'KTM',
       age: 1,
-      phoneNo: 'asd');
+      phoneNo: '9877733774');
 
   Person p2 = p.copyWith(personId: 2);
 
