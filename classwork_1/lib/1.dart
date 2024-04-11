@@ -1,7 +1,7 @@
 // create a class name person in dart with properties fName, lName,age, address, phoneNumber and personId
 
 class Person {
-  //properties of class
+  //properties of class Person
   String fName;
   String lName;
   int age;
