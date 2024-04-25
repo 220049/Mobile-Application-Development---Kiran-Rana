@@ -1,0 +1,15 @@
+FLUTTER CREATION FORMAT FOR NO ERRORS LATER:
+flutter create --org com.yourname.first_app first_app
+
+FLUTTER CODE FOR AUTOMATIC DATATYPES:IN CTRL+SHIFT+P : OPEN USER SETTINGS(JSON): PASTE AT END AFTER GIVING A COMMA
+
+"editor.codeActionsOnSave": {
+    "source.fixAll": "explicit",
+    "source.organizeImports": "explicit"
+  },
+  "editor.formatOnSave": true,
+  "editor.mouseWheelZoom": true,
+
+
+DISABLE FLUTTER COMPILE IN LINUX, MAC AND WINDOWS IN CMD:
+flutter config --no-enable-macos-desktop --no-enable-windows-desktop --no-enable-linux-desktop
